@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NumberTwo {
+public class Whole {
     public static void main(){
         int number;
 
