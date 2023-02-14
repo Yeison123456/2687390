@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Age {
-    public static void main(){
-        int age;
+public static void main(String[] args) {
+    int age;
 
         Scanner lectura = new Scanner (System.in);
         System.out.println("Ingresa la edad");
@@ -15,5 +15,5 @@ public class Age {
         }
 
         lectura.close();
-    }
+}
 }

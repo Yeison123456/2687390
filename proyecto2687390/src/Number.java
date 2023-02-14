@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Number {
-    public static void main(){
-        int numberOne, numberTwo, suma, resta;
+public static void main(String[] args) {
+    int numberOne, numberTwo, suma, resta;
 
         Scanner lectura = new Scanner (System.in);
         System.out.println("Ingresa el primer numero");
@@ -26,3 +26,4 @@ public class Number {
         lectura.close();
     }
 }
+       
