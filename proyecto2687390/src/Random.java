@@ -8,7 +8,7 @@ public static void main(String[] args) {
         String eleccion;
 
         Scanner lectura = new Scanner (System.in);
-        System.out.println("Cara o sello");
+        System.out.println("¿Cara o sello?");
         eleccion = lectura.nextLine();
 
         if( eleccion.equals("cara") && numero==1 ){
