@@ -11,11 +11,17 @@ public static void main(String[] args) {
         System.out.println("Cara o cruz");
         eleccion = lectura.nextLine();
 
-        if( numero<2 ){
+        if( eleccion.equals("cara") && numero==1 ){
             System.out.println("Usted escogio cara y gano :D");
         }
-        else{
-            System.out.println("Usted escogio cruz y perdio :,(");
+        else if( eleccion.equals("cruz") && numero==2 ){
+            System.out.println("Usted escogio cruz y gano :,(");
+        }
+        else if( eleccion.equals("cara") && numero==2){
+            System.out.println("Usted escogio cara y perdiste");
+        }
+        else if( eleccion.equals("cruz") && numero==1){
+            System.out.println("Ested escogio cruz y perdio");
         }
 
         lectura.close();
