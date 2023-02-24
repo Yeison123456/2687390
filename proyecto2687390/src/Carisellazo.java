@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Random {
+public class Carisellazo {
 public static void main(String[] args) {
 
         int numero = (int)(Math. random()*2+1); 
