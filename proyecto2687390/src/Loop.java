@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Cycle {
+public class Loop {
     public static void main(String[] args) {
         int precio, cantidad, contador, subTotal, total, billete, cambio;
         Scanner lectura= new Scanner(System.in);

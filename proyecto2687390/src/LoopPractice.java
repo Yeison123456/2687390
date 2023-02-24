@@ -1,5 +1,5 @@
 import java.util.Scanner;
- public class CyclePractice { public static void main(String[] args) { 
+ public class LoopPractice { public static void main(String[] args) { 
     Scanner lectura = new Scanner(System.in); 
     int contadorH, contadorM; 
     String genero; 
