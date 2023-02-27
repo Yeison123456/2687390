@@ -4,25 +4,25 @@ public class Average {
     
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
-        double nota1, nota2, nota3, asistencia, promedio;
+        double note1, note2, note3, attendance, average;
         
         System.out.println("Ingrese la primera nota");
-        nota1=lectura.nextDouble();
+        note1=lectura.nextDouble();
         System.out.println("Ingrese la segunda nota");
-        nota2=lectura.nextDouble();
+        note2=lectura.nextDouble();
         System.out.println("Ingrese la tercera nota");
-        nota3=lectura.nextDouble();
+        note3=lectura.nextDouble();
         System.out.println("Ingrese el porcentaje de asistencia");
-        asistencia=lectura.nextDouble();
+        attendance=lectura.nextDouble();
         
 
-        promedio=(nota1+nota2+nota3)/3;
+        average=(note1+note2+note3)/3;
 
-        if(promedio>=3.5 && asistencia>=70){
-            System.out.println("Su promedio de notas fue de "+promedio+" por lo tanto, aprobaste :D" );
+        if(average>=3.5 && attendance>=70){
+            System.out.println("Su promedio de notas fue de "+average+" por lo tanto, aprobaste :D" );
         }
         else{
-            System.out.println("Su promedio de notas fue de "+promedio+"lo cual no supera el 3.5 para aprobar, por lo tanto, no aprobaste :(");
+            System.out.println("Su promedio de notas fue de "+average+"lo cual no supera el 3.5 para aprobar, por lo tanto, no aprobaste :(");
         }
 
 

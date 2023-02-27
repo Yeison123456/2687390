@@ -4,7 +4,7 @@ public class SupermarketNoe {
     public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
         int op;
-        double buy, price, amount, totals, ticket, change, changeR, changeB, changeY, red, blue, yellow;
+        double buy, price, amount, totals, ticket, change, changeR, changeB, disfoundR, disfoundB, changeY, red, blue, yellow;
         String desicion;
         
         op=1;
@@ -43,16 +43,18 @@ public class SupermarketNoe {
         int bolita = (int)(Math. random()*4+1); 
         
         if( totals>=50000 && bolita==1){
+            disfoundR=(totals*10)/100;
             red=(totals*90)/100;
-            System.out.println("Sacaste la bolita roja la cual tiene un descuento del 10%, el total que tienes que pagar es de " + red);
+            System.out.println("Sacaste la bolita roja la cual tiene un descuento del 10%(" + disfoundR +"), el total que tienes que pagar es de " + red);
             System.out.println("¿Con cuanto dinero piensa pagar?");
             ticket=lectura.nextInt();
             changeR=ticket-red;
             System.out.println("Tu cambio es de "+changeR);
         }
         else if( totals>=50000 && bolita==2 ){
+            disfoundB=(totals*30)/100;
             blue=(totals*70)/100;
-            System.out.println("Sacaste la bolita azul la cual tiene un descuento del 30%, el total que tienes que pagar es de " + blue);
+            System.out.println("Sacaste la bolita azul la cual tiene un descuento del 30%("+disfoundB+ "), el total que tienes que pagar es de " + blue);
             System.out.println("¿Con cuanto dinero piensa pagar?");
             ticket=lectura.nextInt();
             changeB=ticket-blue;
@@ -60,7 +62,7 @@ public class SupermarketNoe {
         }
         else if( totals>=50000 && bolita==3 ){
             yellow=(totals*50)/100;
-            System.out.println("Sacaste la bolita amarilla la cual tiene un descuento del 50%, el total que tienes que pagar es de " + yellow);
+            System.out.println("Sacaste la bolita amarilla la cual tiene un descuento del 50%("+yellow+"), el total que tienes que pagar es de " + yellow);
             System.out.println("¿Con cuanto dinero piensa pagar?");
             ticket=lectura.nextInt();
             changeY=ticket-yellow;

@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class Budget {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
-        double ancho, largo, area, presupuesto;
+        double broad, length, area, budget;
 
         System.out.println("Ingrese el ancho");
-        ancho = lectura.nextDouble();
+        broad = lectura.nextDouble();
 
         System.out.println("Ingrese el largo");
-        largo = lectura.nextDouble();
+        length = lectura.nextDouble();
 
-        area = ancho * largo;
+        area = broad * length;
 
-        presupuesto = 45.000 * area;
+        budget = 45.000 * area;
 
-        System.out.println("La superficie a cubrir tiene " + ancho + " metros de ancho por " + largo
+        System.out.println("La superficie a cubrir tiene " + broad + " metros de ancho por " + length
                 + " metros de largo, " + "con " + area +
-                "  metros cuadrados. " + "El presupuesto del proyecto es " + presupuesto);
+                "  metros cuadrados. " + "El presupuesto del proyecto es " + budget);
 
         lectura.close();
 

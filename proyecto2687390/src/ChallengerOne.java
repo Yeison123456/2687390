@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class ChallengerOne {
     public static void main(String[] args) throws Exception {
         Scanner lectura = new Scanner(System.in);
-        double temperaturaEnFahrenheit, temperaturaEnCentigrados;
+        double temperatureF, temperatureC;
 
         System.out.println("Ingrese la temperatura en Fahrenheit ");
-        temperaturaEnFahrenheit = lectura.nextDouble();
+        temperatureF = lectura.nextDouble();
 
-        temperaturaEnCentigrados = (temperaturaEnFahrenheit - 32) / 1.8;
+        temperatureC = (temperatureF - 32) / 1.8;
 
-        System.out.println("La temperatura en centigrados es " + temperaturaEnCentigrados);
+        System.out.println("La temperatura en centigrados es " + temperatureC);
 
         lectura.close();
     }
