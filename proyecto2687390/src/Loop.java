@@ -22,12 +22,17 @@ public class Loop {
             System.out.println("El valor a pagar es de " + total);
             System.out.println("¿Con cuanto vas a pagar?");
             bill=lectura.nextInt();
+                while(bill<=total){
+                    System.out.println("No te alcanza para pagar la compra, digita un precio mas alto o igual que "+ total);
+                     System.out.println("¿Con cuanto dinero piensa pagar?");
+                    bill=lectura.nextInt();
+            }
             change=bill-total;
             System.out.println("Su cambio es de " + change);
 
             lectura.nextLine();
             String respuesta;
-            System.out.println("¿Cuenta con telefonia movil exito?");
+            System.out.println("¿Cuenta con telefonia movil exito, si o no?");
             respuesta=lectura.nextLine();
 
             if(respuesta.equals("si")){
