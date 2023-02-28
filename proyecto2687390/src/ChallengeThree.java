@@ -1,26 +1,26 @@
 import java.util.Scanner;
 
-public class Carisellazo {
+public class ChallengeThree {
 public static void main(String[] args) {
 
-        int numero = (int)(Math. random()*2+1); 
+        int number = (int)(Math. random()*2+1); 
 
-        String eleccion;
+        String choice;
 
         Scanner lectura = new Scanner (System.in);
         System.out.println("¿Cara o sello?");
-        eleccion = lectura.nextLine();
+        choice = lectura.nextLine();
 
-        if( eleccion.equals("cara") && numero==1 ){
+        if( choice.equals("cara") && number==1 ){
             System.out.println("Usted escogio cara y gano :D");
         }
-        else if( eleccion.equals("sello") && numero==2 ){
+        else if( choice.equals("sello") && number==2 ){
             System.out.println("Usted escogio sello y gano :D");
         }
-        else if( eleccion.equals("cara") && numero==2){
+        else if( choice.equals("cara") && number==2){
             System.out.println("Usted escogio cara y perdiste :,(");
         }
-        else if( eleccion.equals("sello") && numero==1){
+        else if( choice.equals("sello") && number==1){
             System.out.println("Ested escogio sello y perdio :,(");
         }
 

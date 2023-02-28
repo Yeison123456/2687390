@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SupermarketNoe {
+public class ChallengeEight {
     public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
         int op;

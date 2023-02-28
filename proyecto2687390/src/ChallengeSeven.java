@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Discount {
+public class ChallengeSeven {
     public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
         
@@ -21,11 +21,11 @@ public class Discount {
         int bolita = (int)(Math. random()*4+1); 
 
         if( bolita==1){
-            red=(buy*10)/100;
+            red=(buy*90)/100;
             System.out.println("Sacaste la bolita roja la cual tiene un descuento del 10%, el total que tienes que pagar es de " + red);
         }
         else if( bolita==2 ){
-            blue=(buy*30)/100;
+            blue=(buy*70)/100;
             System.out.println("Sacaste la bolita azul la cual tiene un descuento del 30%, el total que tienes que pagar es de " + blue);
         }
         else if( bolita==3 ){

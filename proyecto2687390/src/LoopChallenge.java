@@ -3,26 +3,26 @@ import java.util.Scanner;
 public class LoopChallenge {
     public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
-        double nota, acumulador, promedio;
+        double note, accumulator, average;
 
-        acumulador=0;
+        accumulator=0;
         for(int x=1; x<=4; x++){
             System.out.println("Digite las notas obtenidas de los talleres de 1.0 a 5.0");
-            nota=lectura.nextDouble();
+            note=lectura.nextDouble();
 
-            acumulador=acumulador+nota;
+            accumulator=accumulator+note;
         }
 
-        promedio=acumulador/4;
+        average=accumulator/4;
 
-        if(promedio<=2.9){ 
-            System.out.println("Reprobaste la asignatura con un promedio de "+promedio);
+        if(average<=2.9){ 
+            System.out.println("Reprobaste la asignatura con un promedio de "+average);
         } 
-        else if(promedio>=3.0 && promedio<=4.0){
-            System.out.println("Pasaste raspando la materia con un promedio de "+promedio);
+        else if(average>=3.0 && average<=4.0){
+            System.out.println("Pasaste raspando la materia con un promedio de "+average);
         } 
         else{
-            System.out.println("Aprobaste con buenos resultados con un promedio de "+promedio);
+            System.out.println("Aprobaste con buenos resultados con un promedio de "+average);
         }
         lectura.close();
     }

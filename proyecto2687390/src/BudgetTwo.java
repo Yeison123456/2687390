@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class BudgetTwo {
     public static void main(String[] args) {
         Scanner lectura=new Scanner(System.in);
-        int spent, budget, totals, op, contador;
+        int spent, budget, totals, op, counter;
 
-        contador=0;
+        counter=0;
         op=1;
         budget=100000;
         totals=0;
-        while(op==1 && contador<=2){
+        while(op==1 && counter<=2){
         System.out.println("Ingrese el gasto");
         spent=lectura.nextInt();
         budget=budget-spent;
@@ -18,8 +18,8 @@ public class BudgetTwo {
         
         System.out.println("¿Desea registrar otro gasto? 1.Si 2.No");
         op=lectura.nextInt();
-        contador=contador+1;
-        if(contador>=3){
+        counter=counter+1;
+        if(counter>=3){
             System.out.println("supero los limites de los gastos");
         }  
 

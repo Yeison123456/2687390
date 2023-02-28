@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ChallengerOne {
+public class ChallengeOne {
     public static void main(String[] args) throws Exception {
         Scanner lectura = new Scanner(System.in);
         double temperatureF, temperatureC;

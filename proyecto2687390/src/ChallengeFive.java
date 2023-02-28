@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Name {
+public class ChallengeFive {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
 

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class GamePPT {
+public class ChallengeFour {
     public static void main(String[] args) {
         int number = (int)(Math. random()*3+1); 
 
