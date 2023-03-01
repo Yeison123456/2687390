@@ -14,10 +14,14 @@ public class ChallengeOne {
 
         
         suma=0;
-
          for(int p=0;p<notas.length;p++){
-            System.out.println("Digite la primera nota "+p);
+            System.out.println("Digite la nota "+p);
             notas[p]=lectura.nextDouble();
+                while(notas[p]>=5.0){
+                    System.out.println("Estas digitando una nota por encima del 5.0");
+                    System.out.println("Digite otra vez la nota "+p);
+                    notas[p]=lectura.nextDouble();
+                }
             suma=suma+notas[p];
         }
         for (double i : notas) {
@@ -35,6 +39,6 @@ public class ChallengeOne {
         else{
             System.out.println("Aprobaste con buenos resultados");
         }
-        
+        lectura.close();
     }
 }
